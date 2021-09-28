@@ -5,7 +5,6 @@ print("connection is created")
 c.bind(('192.168.81.1',1267))
 
 # To make the server socket listen to the client request
-
 c.listen()
 
 print("server is waiting for connection")
@@ -23,6 +22,5 @@ while True:
 # Receiving from client
     recData = conn.recv(1024)
     print("Data from client",recData.decode())
-
 
 c.close()
